@@ -18,6 +18,15 @@
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.fox.colorvalley"
+        },
+        "cordova-plugin-ad-chartboost": {
+            "PACKAGE_NAME": "com.fox.colorvalley"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.fox.colorvalley"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.fox.colorvalley"
         }
     },
     "dependent_plugins": {}

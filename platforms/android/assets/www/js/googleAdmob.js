@@ -1,16 +1,29 @@
 
-var bannerAdUnit = 'ca-app-pub-8295605020027148/3378986710';
-var intersititalAdUnit='ca-app-pub-8295605020027148/4775531117';
+
 var isOverlap = true;
 var isTest = false;
-
+var mobid ={};
+if (/(android)/i.test(navigator.userAgent)) {
+mobid={
+	bannerAdUnit:"ca-app-pub-4639863322045897/5089747962",
+	intersititalAdUnit:"ca-app-pub-4639863322045897/8043214366"
+  };
+}
+else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+//  alert('iOS');
+mobid={
+		bannerAdUnit:"ca-app-pub-4639863322045897/6706081969",
+		intersititalAdUnit:"ca-app-pub-4639863322045897/8182815164"
+  };
+}
 
 function init(){
-	window.admob.setUp(bannerAdUnit,intersititalAdUnit,isOverlap,isTest);
+	window.admob.setUp(mobid.bannerAdUnit,mobid.intersititalAdUnit,isOverlap,isTest);
 	window.admob.onBannerAdPreloaded = bannerPreloaded;
 	window.admob.onInterstitialAdPreloaded = intersitialPreloaded;
 	window.admob.preloadBannerAd();
 	window.admob.preloadInterstitialAd();
+	//alert('msg');
 }
 
 function bannerPreloaded()
@@ -24,4 +37,3 @@ function intersitialPreloaded () {
 	//alert('intersitial preloaded');
 	 window.admob.showInterstitialAd();
 }
-

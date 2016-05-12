@@ -18,6 +18,27 @@ module.exports = [
         "clobbers": [
             "device"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-ad-chartboost/www/chartboost.js",
+        "id": "cordova-plugin-ad-chartboost.chartboost",
+        "clobbers": [
+            "window.chartboost"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -26,7 +47,10 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.1",
     "com.google.playservices": "19.0.0",
     "com.cranberrygame.phonegap.plugin.ad.admob": "1.0.39",
-    "cordova-plugin-device": "1.1.1"
+    "cordova-plugin-device": "1.1.1",
+    "cordova-plugin-ad-chartboost": "1.0.81",
+    "cordova-plugin-splashscreen": "3.2.2",
+    "cordova-plugin-statusbar": "2.1.3"
 };
 // BOTTOM OF METADATA
 });

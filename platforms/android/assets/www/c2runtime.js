@@ -11720,7 +11720,7 @@ function Fc(n) {
 })();
 function Gc(n) {
     this.b = n
-} 
+}
 
 (function() {
     function n(c) {
@@ -11775,49 +11775,49 @@ function Gc(n) {
     p.I.prototype.H = function() {
         //alert(window.admob);
         //alert(this.B);
-        if (window.admob) {
-            k = !0;
-            this.zb = window.admob;
-            this.zb.setLicenseKey && this.zb.setLicenseKey("support@scirra.com", "2ba99d4ff8c219cf7331c88fb3344f80");
-            var c = 0 !== this.B[0],
-            b = 0 !== this.B[1];
-            this.vx = this.B[2];
-            this.wx = this.B[3];
-            this.Oz = this.B[4];
-            this.Pz = this.B[5];
-            this.DB = this.B[6];
-            this.EB = this.B[7];
-            this.b.mg ? (this.fk = this.vx, this.al = this.wx) : this.b.pg ? (this.fk = this.Oz, this.al = this.Pz) : this.b.qd || this.b.el ? (this.fk = this.DB, this.al = this.EB) : this.al = this.fk = "";
-            this.Ji = this.ls = !1;
-            //this.zb.setUp(this.fk, this.al, c, b);
-            this.zb.setUp('ca-app-pub-8295605020027148/3378986710','ca-app-pub-8295605020027148/4775531117',true,false);
-            var d = this;
-            this.zb.onFullScreenAdLoaded = function() {
-                d.b.trigger(Gc.prototype.j.Bq, d)
-            };
-            this.zb.onInterstitialAdLoaded = function() {
-                d.b.trigger(Gc.prototype.j.Bq, d)
-            };
-            this.zb.onFullScreenAdShown = function() {
-                d.Ji = !0;
-                d.b.trigger(Gc.prototype.j.Aq, d)
-            };
-            this.zb.onInterstitialAdShown = function() {
-                d.Ji = !0;
-                d.b.trigger(Gc.prototype.j.Aq, d)
-            };
-            this.zb.onFullScreenAdClosed = function() {
-                d.Ji = !1;
-                d.b.trigger(Gc.prototype.j.zq, d)
-            };
-            this.zb.onInterstitialAdHidden = function() {
-                d.Ji = !1;
-                d.b.trigger(Gc.prototype.j.zq, d)
-            };
-            this.zb.onBannerAdPreloaded = function() {
-                d.b.trigger(Gc.prototype.j.wq, d)
-            }
-        } else ga("[Construct 2] com.cranberrygame.phonegap.plugin.ad.admob plugin is required to show Admob ads with Cordova; other platforms are not supported")
+        // if (window.admob) {
+        //     k = !0;
+        //     this.zb = window.admob;
+        //     this.zb.setLicenseKey && this.zb.setLicenseKey("support@scirra.com", "2ba99d4ff8c219cf7331c88fb3344f80");
+        //     var c = 0 !== this.B[0],
+        //     b = 0 !== this.B[1];
+        //     this.vx = this.B[2];
+        //     this.wx = this.B[3];
+        //     this.Oz = this.B[4];
+        //     this.Pz = this.B[5];
+        //     this.DB = this.B[6];
+        //     this.EB = this.B[7];
+        //     this.b.mg ? (this.fk = this.vx, this.al = this.wx) : this.b.pg ? (this.fk = this.Oz, this.al = this.Pz) : this.b.qd || this.b.el ? (this.fk = this.DB, this.al = this.EB) : this.al = this.fk = "";
+        //     this.Ji = this.ls = !1;
+        //     //this.zb.setUp(this.fk, this.al, c, b);
+        //    // this.zb.setUp('ca-app-pub-8295605020027148/3378986710','ca-app-pub-8295605020027148/4775531117',true,false);
+        //     var d = this;
+        //     this.zb.onFullScreenAdLoaded = function() {
+        //         d.b.trigger(Gc.prototype.j.Bq, d)
+        //     };
+        //     this.zb.onInterstitialAdLoaded = function() {
+        //         d.b.trigger(Gc.prototype.j.Bq, d)
+        //     };
+        //     this.zb.onFullScreenAdShown = function() {
+        //         d.Ji = !0;
+        //         d.b.trigger(Gc.prototype.j.Aq, d)
+        //     };
+        //     this.zb.onInterstitialAdShown = function() {
+        //         d.Ji = !0;
+        //         d.b.trigger(Gc.prototype.j.Aq, d)
+        //     };
+        //     this.zb.onFullScreenAdClosed = function() {
+        //         d.Ji = !1;
+        //         d.b.trigger(Gc.prototype.j.zq, d)
+        //     };
+        //     this.zb.onInterstitialAdHidden = function() {
+        //         d.Ji = !1;
+        //         d.b.trigger(Gc.prototype.j.zq, d)
+        //     };
+        //     this.zb.onBannerAdPreloaded = function() {
+        //         d.b.trigger(Gc.prototype.j.wq, d)
+        //     }
+        // } else ga("[Construct 2] com.cranberrygame.phonegap.plugin.ad.admob plugin is required to show Admob ads with Cordova; other platforms are not supported")
     };
     c.prototype.hv = function() {
         return this.ls
@@ -11845,7 +11845,8 @@ function Gc(n) {
         k && (this.zb.preloadInterstitialAd ? this.zb.preloadInterstitialAd() : this.zb.preloadFullScreenAd && this.zb.preloadFullScreenAd())
     };
     d.prototype.Qw = function() {
-        alert('qw');
+        // cb.showInterstitialAd();
+        cb_show();
         k && (this.zb.showInterstitialAd ? this.zb.showInterstitialAd() : this.zb.showFullScreenAd && this.zb.showFullScreenAd())
     };
     d.prototype.ew = function() {
